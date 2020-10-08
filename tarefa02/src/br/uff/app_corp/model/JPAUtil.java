@@ -11,7 +11,7 @@ public class JPAUtil {
 
 	    public static EntityManager getEntityManager(){
 	        if (entityManagerFactory == null) {
-	        	entityManagerFactory = Persistence.createEntityManagerFactory("Tarefa-PU");
+	        	entityManagerFactory = Persistence.createEntityManagerFactory("Eventos-PU");
 	        }
 	        if (entityManager == null) {
 	        	entityManager = entityManagerFactory.createEntityManager();

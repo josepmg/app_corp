@@ -22,6 +22,7 @@ public class Edicao {
 	@Column (name = "paisSede")
 	private String  paisSede;
 	@ManyToOne
+	@JoinColumn(name="eventoId", referencedColumnName="eventoId")
 	private Evento evento;
 	
 	public Edicao() {
